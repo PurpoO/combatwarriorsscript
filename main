@@ -1,0 +1,802 @@
+--[[
+
+
+
+MADE BY YT: MOON - DEVELOPER
+
+
+
+
+Hello World!
+
+
+
+
+]]
+
+local CheatGUI = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local HeaderFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local LocalPlayerLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local ApplySpeed = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local SpeedBox = Instance.new("TextBox")
+local ApplyJump = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local JumpBox = Instance.new("TextBox")
+local MapLabel = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local DestroyMolotov = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local DestroyMolotovLabel = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local AirdropEsp = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local AirdropESPLabel = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local DestroyGUI = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local DestroyGUILabel = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local CheckAirdrop = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local PlayersLabel = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local PlayerEsp = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local PlayerESPLabel = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local DestroyBearTrap = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local DestroyBearTrapLabel = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local DestroySmokeLabel = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local DestroySmoke = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local FPSBoost = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local FpsBoostLabel = Instance.new("TextLabel")
+local UICorner_21 = Instance.new("UICorner")
+local TeleporttoAirdrop = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local TeleporttoAirdropLabel = Instance.new("TextLabel")
+local UICorner_23 = Instance.new("UICorner")
+
+--Properties:
+
+CheatGUI.Name = "CheatGUI"
+CheatGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CheatGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+CheatGUI.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = CheatGUI
+MainFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+MainFrame.Position = UDim2.new(0.178398058, 0, 0.212345675, 0)
+MainFrame.Size = UDim2.new(0, 331, 0, 327)
+
+UICorner.Parent = MainFrame
+
+HeaderFrame.Name = "HeaderFrame"
+HeaderFrame.Parent = MainFrame
+HeaderFrame.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+HeaderFrame.BorderSizePixel = 0
+HeaderFrame.Position = UDim2.new(-0.00131114945, 0, -0.0495299399, 0)
+HeaderFrame.Size = UDim2.new(0, 331, 0, 23)
+
+TextLabel.Parent = HeaderFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0332326293, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 112, 0, 23)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Combat Warriors"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+TextLabel_2.Parent = HeaderFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.661631405, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 112, 0, 23)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Moon - Developer"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextWrapped = true
+
+LocalPlayerLabel.Name = "LocalPlayerLabel"
+LocalPlayerLabel.Parent = MainFrame
+LocalPlayerLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+LocalPlayerLabel.BackgroundTransparency = 0.500
+LocalPlayerLabel.Position = UDim2.new(0.129909366, 0, 0.122324169, 0)
+LocalPlayerLabel.Size = UDim2.new(0, 79, 0, 23)
+LocalPlayerLabel.Font = Enum.Font.GothamBold
+LocalPlayerLabel.Text = "LocalPlayer"
+LocalPlayerLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+LocalPlayerLabel.TextScaled = true
+LocalPlayerLabel.TextSize = 14.000
+LocalPlayerLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayerLabel.TextWrapped = true
+
+UICorner_2.Parent = LocalPlayerLabel
+
+ApplySpeed.Name = "ApplySpeed"
+ApplySpeed.Parent = MainFrame
+ApplySpeed.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+ApplySpeed.BackgroundTransparency = 0.200
+ApplySpeed.Position = UDim2.new(0.0574018136, 0, 0.217125386, 0)
+ApplySpeed.Size = UDim2.new(0, 30, 0, 30)
+ApplySpeed.Font = Enum.Font.SourceSans
+ApplySpeed.Text = ""
+ApplySpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+ApplySpeed.TextSize = 14.000
+
+UICorner_3.Parent = ApplySpeed
+
+SpeedBox.Name = "SpeedBox"
+SpeedBox.Parent = MainFrame
+SpeedBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBox.BackgroundTransparency = 1.000
+SpeedBox.Position = UDim2.new(0.148036256, 0, 0.217125386, 0)
+SpeedBox.Size = UDim2.new(0, 139, 0, 30)
+SpeedBox.Font = Enum.Font.GothamBold
+SpeedBox.PlaceholderColor3 = Color3.fromRGB(213, 213, 213)
+SpeedBox.PlaceholderText = "Walk Speed Here: 16 (don't do too much)"
+SpeedBox.Text = ""
+SpeedBox.TextColor3 = Color3.fromRGB(213, 213, 213)
+SpeedBox.TextSize = 14.000
+SpeedBox.TextWrapped = true
+
+ApplyJump.Name = "ApplyJump"
+ApplyJump.Parent = MainFrame
+ApplyJump.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+ApplyJump.BackgroundTransparency = 0.200
+ApplyJump.Position = UDim2.new(0.0574018136, 0, 0.330275238, 0)
+ApplyJump.Size = UDim2.new(0, 30, 0, 30)
+ApplyJump.Font = Enum.Font.SourceSans
+ApplyJump.Text = ""
+ApplyJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+ApplyJump.TextSize = 14.000
+
+UICorner_4.Parent = ApplyJump
+
+JumpBox.Name = "JumpBox"
+JumpBox.Parent = MainFrame
+JumpBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpBox.BackgroundTransparency = 1.000
+JumpBox.Position = UDim2.new(0.148036256, 0, 0.330275238, 0)
+JumpBox.Size = UDim2.new(0, 143, 0, 30)
+JumpBox.Font = Enum.Font.GothamBold
+JumpBox.PlaceholderColor3 = Color3.fromRGB(213, 213, 213)
+JumpBox.PlaceholderText = "Jump Power Here: 50 (don't do too much)"
+JumpBox.Text = ""
+JumpBox.TextColor3 = Color3.fromRGB(213, 213, 213)
+JumpBox.TextSize = 14.000
+JumpBox.TextWrapped = true
+
+MapLabel.Name = "MapLabel"
+MapLabel.Parent = MainFrame
+MapLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+MapLabel.BackgroundTransparency = 0.500
+MapLabel.Position = UDim2.new(0.658610225, 0, 0.122324169, 0)
+MapLabel.Size = UDim2.new(0, 79, 0, 23)
+MapLabel.Font = Enum.Font.GothamBold
+MapLabel.Text = "Map"
+MapLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+MapLabel.TextSize = 14.000
+MapLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+MapLabel.TextWrapped = true
+
+UICorner_5.Parent = MapLabel
+
+DestroyMolotov.Name = "DestroyMolotov"
+DestroyMolotov.Parent = MainFrame
+DestroyMolotov.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+DestroyMolotov.BackgroundTransparency = 0.200
+DestroyMolotov.Position = UDim2.new(0.60725081, 0, 0.21406728, 0)
+DestroyMolotov.Size = UDim2.new(0, 30, 0, 30)
+DestroyMolotov.Font = Enum.Font.SourceSans
+DestroyMolotov.Text = ""
+DestroyMolotov.TextColor3 = Color3.fromRGB(0, 0, 0)
+DestroyMolotov.TextSize = 14.000
+
+UICorner_6.Parent = DestroyMolotov
+
+DestroyMolotovLabel.Name = "DestroyMolotovLabel"
+DestroyMolotovLabel.Parent = MainFrame
+DestroyMolotovLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+DestroyMolotovLabel.BackgroundTransparency = 1.000
+DestroyMolotovLabel.Position = UDim2.new(0.709969759, 0, 0.226299703, 0)
+DestroyMolotovLabel.Size = UDim2.new(0, 79, 0, 23)
+DestroyMolotovLabel.Font = Enum.Font.GothamBold
+DestroyMolotovLabel.Text = "Destroy Molotov"
+DestroyMolotovLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+DestroyMolotovLabel.TextScaled = true
+DestroyMolotovLabel.TextSize = 14.000
+DestroyMolotovLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+DestroyMolotovLabel.TextWrapped = true
+
+UICorner_7.Parent = DestroyMolotovLabel
+
+AirdropEsp.Name = "AirdropEsp"
+AirdropEsp.Parent = MainFrame
+AirdropEsp.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+AirdropEsp.BackgroundTransparency = 0.200
+AirdropEsp.Position = UDim2.new(0.60725081, 0, 0.535168231, 0)
+AirdropEsp.Size = UDim2.new(0, 30, 0, 30)
+AirdropEsp.Font = Enum.Font.SourceSans
+AirdropEsp.Text = ""
+AirdropEsp.TextColor3 = Color3.fromRGB(0, 0, 0)
+AirdropEsp.TextSize = 14.000
+
+UICorner_8.Parent = AirdropEsp
+
+AirdropESPLabel.Name = "AirdropESPLabel"
+AirdropESPLabel.Parent = MainFrame
+AirdropESPLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+AirdropESPLabel.BackgroundTransparency = 1.000
+AirdropESPLabel.Position = UDim2.new(0.709969759, 0, 0.547400653, 0)
+AirdropESPLabel.Size = UDim2.new(0, 79, 0, 23)
+AirdropESPLabel.Font = Enum.Font.GothamBold
+AirdropESPLabel.Text = "Airdrop ESP"
+AirdropESPLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+AirdropESPLabel.TextScaled = true
+AirdropESPLabel.TextSize = 14.000
+AirdropESPLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+AirdropESPLabel.TextWrapped = true
+
+UICorner_9.Parent = AirdropESPLabel
+
+DestroyGUI.Name = "DestroyGUI"
+DestroyGUI.Parent = MainFrame
+DestroyGUI.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+DestroyGUI.BackgroundTransparency = 0.200
+DestroyGUI.Position = UDim2.new(0.60725081, 0, 0.877675831, 0)
+DestroyGUI.Size = UDim2.new(0, 30, 0, 30)
+DestroyGUI.Font = Enum.Font.SourceSans
+DestroyGUI.Text = ""
+DestroyGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+DestroyGUI.TextSize = 14.000
+
+UICorner_10.Parent = DestroyGUI
+
+DestroyGUILabel.Name = "DestroyGUILabel"
+DestroyGUILabel.Parent = MainFrame
+DestroyGUILabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+DestroyGUILabel.BackgroundTransparency = 1.000
+DestroyGUILabel.Position = UDim2.new(0.709969759, 0, 0.886850119, 0)
+DestroyGUILabel.Size = UDim2.new(0, 79, 0, 23)
+DestroyGUILabel.Font = Enum.Font.GothamBold
+DestroyGUILabel.Text = "Destroy GUI"
+DestroyGUILabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+DestroyGUILabel.TextScaled = true
+DestroyGUILabel.TextSize = 14.000
+DestroyGUILabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+DestroyGUILabel.TextWrapped = true
+
+UICorner_11.Parent = DestroyGUILabel
+
+CheckAirdrop.Name = "CheckAirdrop"
+CheckAirdrop.Parent = MainFrame
+CheckAirdrop.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+CheckAirdrop.BackgroundTransparency = 1.000
+CheckAirdrop.Position = UDim2.new(0.634441078, 0, 0.782874644, 0)
+CheckAirdrop.Size = UDim2.new(0, 100, 0, 23)
+CheckAirdrop.Font = Enum.Font.GothamBold
+CheckAirdrop.Text = "Airdrop Have: false"
+CheckAirdrop.TextColor3 = Color3.fromRGB(213, 213, 213)
+CheckAirdrop.TextScaled = true
+CheckAirdrop.TextSize = 14.000
+CheckAirdrop.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+CheckAirdrop.TextWrapped = true
+
+UICorner_12.Parent = CheckAirdrop
+
+PlayersLabel.Name = "PlayersLabel"
+PlayersLabel.Parent = MainFrame
+PlayersLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+PlayersLabel.BackgroundTransparency = 0.500
+PlayersLabel.Position = UDim2.new(0.129909337, 0, 0.522935748, 0)
+PlayersLabel.Size = UDim2.new(0, 79, 0, 23)
+PlayersLabel.Font = Enum.Font.GothamBold
+PlayersLabel.Text = "Players"
+PlayersLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+PlayersLabel.TextSize = 14.000
+PlayersLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+PlayersLabel.TextWrapped = true
+
+UICorner_13.Parent = PlayersLabel
+
+PlayerEsp.Name = "PlayerEsp"
+PlayerEsp.Parent = MainFrame
+PlayerEsp.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+PlayerEsp.BackgroundTransparency = 0.200
+PlayerEsp.Position = UDim2.new(0.0574018955, 0, 0.626911283, 0)
+PlayerEsp.Size = UDim2.new(0, 30, 0, 30)
+PlayerEsp.Font = Enum.Font.SourceSans
+PlayerEsp.Text = ""
+PlayerEsp.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerEsp.TextSize = 14.000
+
+UICorner_14.Parent = PlayerEsp
+
+PlayerESPLabel.Name = "PlayerESPLabel"
+PlayerESPLabel.Parent = MainFrame
+PlayerESPLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+PlayerESPLabel.BackgroundTransparency = 1.000
+PlayerESPLabel.Position = UDim2.new(0.172205389, 0, 0.636085629, 0)
+PlayerESPLabel.Size = UDim2.new(0, 79, 0, 23)
+PlayerESPLabel.Font = Enum.Font.GothamBold
+PlayerESPLabel.Text = "Player ESP"
+PlayerESPLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+PlayerESPLabel.TextScaled = true
+PlayerESPLabel.TextSize = 14.000
+PlayerESPLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+PlayerESPLabel.TextWrapped = true
+
+UICorner_15.Parent = PlayerESPLabel
+
+DestroyBearTrap.Name = "DestroyBearTrap"
+DestroyBearTrap.Parent = MainFrame
+DestroyBearTrap.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+DestroyBearTrap.BackgroundTransparency = 0.200
+DestroyBearTrap.Position = UDim2.new(0.60725081, 0, 0.330275238, 0)
+DestroyBearTrap.Size = UDim2.new(0, 30, 0, 30)
+DestroyBearTrap.Font = Enum.Font.SourceSans
+DestroyBearTrap.Text = ""
+DestroyBearTrap.TextColor3 = Color3.fromRGB(0, 0, 0)
+DestroyBearTrap.TextSize = 14.000
+
+UICorner_16.Parent = DestroyBearTrap
+
+DestroyBearTrapLabel.Name = "DestroyBearTrapLabel"
+DestroyBearTrapLabel.Parent = MainFrame
+DestroyBearTrapLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+DestroyBearTrapLabel.BackgroundTransparency = 1.000
+DestroyBearTrapLabel.Position = UDim2.new(0.709969759, 0, 0.339449555, 0)
+DestroyBearTrapLabel.Size = UDim2.new(0, 79, 0, 23)
+DestroyBearTrapLabel.Font = Enum.Font.GothamBold
+DestroyBearTrapLabel.Text = "Destroy Bear Trap"
+DestroyBearTrapLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+DestroyBearTrapLabel.TextScaled = true
+DestroyBearTrapLabel.TextSize = 14.000
+DestroyBearTrapLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+DestroyBearTrapLabel.TextWrapped = true
+
+UICorner_17.Parent = DestroyBearTrapLabel
+
+DestroySmokeLabel.Name = "DestroySmokeLabel"
+DestroySmokeLabel.Parent = MainFrame
+DestroySmokeLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+DestroySmokeLabel.BackgroundTransparency = 1.000
+DestroySmokeLabel.Position = UDim2.new(0.709969759, 0, 0.440366983, 0)
+DestroySmokeLabel.Size = UDim2.new(0, 79, 0, 23)
+DestroySmokeLabel.Font = Enum.Font.GothamBold
+DestroySmokeLabel.Text = "Destroy Smoke"
+DestroySmokeLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+DestroySmokeLabel.TextScaled = true
+DestroySmokeLabel.TextSize = 14.000
+DestroySmokeLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+DestroySmokeLabel.TextWrapped = true
+
+UICorner_18.Parent = DestroySmokeLabel
+
+DestroySmoke.Name = "DestroySmoke"
+DestroySmoke.Parent = MainFrame
+DestroySmoke.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+DestroySmoke.BackgroundTransparency = 0.200
+DestroySmoke.Position = UDim2.new(0.60725081, 0, 0.431192666, 0)
+DestroySmoke.Size = UDim2.new(0, 30, 0, 30)
+DestroySmoke.Font = Enum.Font.SourceSans
+DestroySmoke.Text = ""
+DestroySmoke.TextColor3 = Color3.fromRGB(0, 0, 0)
+DestroySmoke.TextSize = 14.000
+
+UICorner_19.Parent = DestroySmoke
+
+FPSBoost.Name = "FPSBoost"
+FPSBoost.Parent = MainFrame
+FPSBoost.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+FPSBoost.BackgroundTransparency = 0.200
+FPSBoost.Position = UDim2.new(0.0543807149, 0, 0.874617755, 0)
+FPSBoost.Size = UDim2.new(0, 30, 0, 30)
+FPSBoost.Font = Enum.Font.SourceSans
+FPSBoost.Text = ""
+FPSBoost.TextColor3 = Color3.fromRGB(0, 0, 0)
+FPSBoost.TextSize = 14.000
+
+UICorner_20.Parent = FPSBoost
+
+FpsBoostLabel.Name = "FpsBoostLabel"
+FpsBoostLabel.Parent = MainFrame
+FpsBoostLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+FpsBoostLabel.BackgroundTransparency = 1.000
+FpsBoostLabel.Position = UDim2.new(0.172205433, 0, 0.886850178, 0)
+FpsBoostLabel.Size = UDim2.new(0, 127, 0, 23)
+FpsBoostLabel.Font = Enum.Font.GothamBold
+FpsBoostLabel.Text = "FPS Boost (cannot be turn off when turn on.)"
+FpsBoostLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+FpsBoostLabel.TextScaled = true
+FpsBoostLabel.TextSize = 14.000
+FpsBoostLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+FpsBoostLabel.TextWrapped = true
+
+UICorner_21.Parent = FpsBoostLabel
+
+TeleporttoAirdrop.Name = "TeleporttoAirdrop"
+TeleporttoAirdrop.Parent = MainFrame
+TeleporttoAirdrop.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+TeleporttoAirdrop.BackgroundTransparency = 0.200
+TeleporttoAirdrop.Position = UDim2.new(0.60725081, 0, 0.636085629, 0)
+TeleporttoAirdrop.Size = UDim2.new(0, 30, 0, 30)
+TeleporttoAirdrop.Font = Enum.Font.SourceSans
+TeleporttoAirdrop.Text = ""
+TeleporttoAirdrop.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleporttoAirdrop.TextSize = 14.000
+
+UICorner_22.Parent = TeleporttoAirdrop
+
+TeleporttoAirdropLabel.Name = "TeleporttoAirdropLabel"
+TeleporttoAirdropLabel.Parent = MainFrame
+TeleporttoAirdropLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TeleporttoAirdropLabel.BackgroundTransparency = 1.000
+TeleporttoAirdropLabel.Position = UDim2.new(0.709969759, 0, 0.648318052, 0)
+TeleporttoAirdropLabel.Size = UDim2.new(0, 79, 0, 23)
+TeleporttoAirdropLabel.Font = Enum.Font.GothamBold
+TeleporttoAirdropLabel.Text = "Teleport to Airdrop"
+TeleporttoAirdropLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+TeleporttoAirdropLabel.TextScaled = true
+TeleporttoAirdropLabel.TextSize = 14.000
+TeleporttoAirdropLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TeleporttoAirdropLabel.TextWrapped = true
+
+UICorner_23.Parent = TeleporttoAirdropLabel
+
+-- Scripts:
+
+local function LMCMF_fake_script() -- HeaderFrame.Draggable 
+	local script = Instance.new('LocalScript', HeaderFrame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	print("Combat Warriors Script Loaded!")
+	warn("made by Moon - Developer")
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(LMCMF_fake_script)()
+local function NBYHYAB_fake_script() -- ApplySpeed.LocalScript 
+	local script = Instance.new('LocalScript', ApplySpeed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.SpeedBox.Text == nil then return end
+		game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = script.Parent.Parent.SpeedBox.Text
+	end)
+end
+coroutine.wrap(NBYHYAB_fake_script)()
+local function WUMZIV_fake_script() -- ApplyJump.LocalScript 
+	local script = Instance.new('LocalScript', ApplyJump)
+
+	local speed = 50
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.JumpBox.Text == nil then return end
+		speed = script.Parent.Parent.JumpBox.Text
+	end)
+	
+	while true do
+		wait(.1)
+		game.Players.LocalPlayer.Character:WaitForChild("Humanoid").JumpPower = speed
+	end
+end
+coroutine.wrap(WUMZIV_fake_script)()
+local function PEYN_fake_script() -- DestroyMolotov.LocalScript 
+	local script = Instance.new('LocalScript', DestroyMolotov)
+
+	local deb = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if deb == false then
+			deb = true
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.117647, 0.784314, 0)
+			
+		elseif deb == true then
+			deb = false
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.827451, 0.356863, 0.568627)
+		end
+	end)
+	
+	
+	
+	while true do
+		wait(.03)
+		if deb == true then
+			local molotovpart = game.Workspace.EffectsJunk:FindFirstChild("")
+			if molotovpart then
+				molotovpart:Destroy()
+			end
+		end
+	end
+end
+coroutine.wrap(PEYN_fake_script)()
+local function VFFC_fake_script() -- AirdropEsp.LocalScript 
+	local script = Instance.new('LocalScript', AirdropEsp)
+
+	local deb = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if deb == false then
+			deb = true
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.117647, 0.784314, 0)
+			
+		elseif deb == true then
+			deb = false
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.827451, 0.356863, 0.568627)
+		end
+	end)
+	
+	
+	
+	while true do
+		wait(.03)
+		if deb == true then
+			local airdrop = game.Workspace.Airdrops:FindFirstChild("Airdrop")
+			if airdrop then
+				airdrop.Crate.Hitbox.Transparency = 0
+				local fakeesp = airdrop.Crate.Hitbox:FindFirstChild("Hitbox")
+				if not fakeesp then
+					local esp = Instance.new("Highlight", airdrop.Crate.Hitbox)
+					esp.Name = airdrop.Crate.Hitbox.Name
+					esp.FillTransparency = 1
+				end
+				
+			end
+		end
+	end
+end
+coroutine.wrap(VFFC_fake_script)()
+local function MABDJPO_fake_script() -- DestroyGUI.LocalScript 
+	local script = Instance.new('LocalScript', DestroyGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(MABDJPO_fake_script)()
+local function IFQR_fake_script() -- CheckAirdrop.LocalScript 
+	local script = Instance.new('LocalScript', CheckAirdrop)
+
+	while true do
+		wait(.03)
+		local airdrop = game.Workspace.Airdrops:FindFirstChild("Airdrop")
+		if airdrop then
+			script.Parent.Text = "Airdrop Have: true"
+		else
+			script.Parent.Text = "Airdrop Have: false"
+		end
+	end
+end
+coroutine.wrap(IFQR_fake_script)()
+local function SJXIFRE_fake_script() -- PlayerEsp.LocalScript 
+	local script = Instance.new('LocalScript', PlayerEsp)
+
+	local deb = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		local players = game.Workspace.PlayerCharacters:GetChildren()
+		
+		if deb == false then
+			deb = true
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.117647, 0.784314, 0)
+			
+			
+		elseif deb == true then
+			deb = false
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.827451, 0.356863, 0.568627)
+			
+			for i, v in pairs(players) do
+				local esp = v:FindFirstChild(v.Name)
+				if esp then
+					esp:Destroy()
+				end
+			end
+		end
+	end)
+	
+	while true do
+		task.wait(.03)
+		
+		if deb == true then
+			local players = game.Workspace.PlayerCharacters:GetChildren()
+			
+			for i, v in pairs(players) do
+				local fakeesp = v:FindFirstChild(v.Name)
+				if not fakeesp then
+					local esp = Instance.new("Highlight")
+					esp.Parent = v
+					esp.Name = v.Name
+				end
+			end
+		end
+	end
+end
+coroutine.wrap(SJXIFRE_fake_script)()
+local function XTRLBDJ_fake_script() -- DestroyBearTrap.LocalScript 
+	local script = Instance.new('LocalScript', DestroyBearTrap)
+
+	local deb = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if deb == false then
+			deb = true
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.117647, 0.784314, 0)
+			
+		elseif deb == true then
+			deb = false
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.827451, 0.356863, 0.568627)
+		end
+	end)
+	
+	
+	
+	while true do
+		wait(.03)
+		if deb == true then
+			local beartrap = game.Workspace.EffectsJunk:FindFirstChild("OpenBearTrap")
+			if beartrap then
+				beartrap:Destroy()
+			end
+		end
+	end
+end
+coroutine.wrap(XTRLBDJ_fake_script)()
+local function QBYKT_fake_script() -- DestroySmoke.LocalScript 
+	local script = Instance.new('LocalScript', DestroySmoke)
+
+	local deb = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if deb == false then
+			deb = true
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.117647, 0.784314, 0)
+			
+		elseif deb == true then
+			deb = false
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.827451, 0.356863, 0.568627)
+		end
+	end)
+	
+	
+	
+	while true do
+		wait(.03)
+		if deb == true then
+			local smoke = game.Workspace.EffectsJunk:FindFirstChild(""):FindFirstChild("Attachment"):FindFirstChild("SmokeSound")
+			if smoke then
+				smoke.Parent.Parent:Destroy()
+			end
+		end
+	end
+end
+coroutine.wrap(QBYKT_fake_script)()
+local function LISQMTG_fake_script() -- FPSBoost.LocalScript 
+	local script = Instance.new('LocalScript', FPSBoost)
+
+	local deb = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		if deb == false then
+			deb = true
+			
+			game.Workspace.BloodPools:Destroy()
+			game.Lighting.ColorCorrection:Destroy()
+			game.Lighting.ColorCorrection:Destroy()
+			game.Lighting.colorCorrection:Destroy()
+		end
+		
+	end)
+	
+	while true do
+		wait(.1)
+		
+		local fakecharacters = game.Workspace.FakeCharacters:GetChildren()
+		
+		if deb == true then
+			
+			
+			
+			for i, v in pairs(fakecharacters) do
+				if #fakecharacters > 0 then
+					v:Destroy()
+				end
+			end
+			
+		end
+		
+	end
+end
+coroutine.wrap(LISQMTG_fake_script)()
+local function MJZNNP_fake_script() -- TeleporttoAirdrop.LocalScript 
+	local script = Instance.new('LocalScript', TeleporttoAirdrop)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local timewait = 4.5
+	
+	local info = TweenInfo.new(timewait, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+	
+	local deb = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if deb == false then
+			deb = true
+			
+			local airdrop =  game.Workspace.Airdrops:FindFirstChild("Airdrop")
+			
+			if airdrop then
+				
+				workspace.Gravity = 0
+				TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, info, {CFrame = airdrop.Crate.Hitbox.CFrame}):Play()
+	
+				task.wait(timewait)
+	
+				workspace.Gravity = 196.2
+				deb = false
+				
+			end
+		end
+	end)
+end
+coroutine.wrap(MJZNNP_fake_script)()
