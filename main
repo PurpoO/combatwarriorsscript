@@ -66,6 +66,10 @@ local TeleporttoAirdrop = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
 local TeleporttoAirdropLabel = Instance.new("TextLabel")
 local UICorner_23 = Instance.new("UICorner")
+local Teleportwhen = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local TeleportwhenLabel = Instance.new("TextLabel")
+local UICorner_25 = Instance.new("UICorner")
 
 --Properties:
 
@@ -305,7 +309,7 @@ PlayersLabel.Name = "PlayersLabel"
 PlayersLabel.Parent = MainFrame
 PlayersLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 PlayersLabel.BackgroundTransparency = 0.500
-PlayersLabel.Position = UDim2.new(0.129909337, 0, 0.522935748, 0)
+PlayersLabel.Position = UDim2.new(0.129909337, 0, 0.547400594, 0)
 PlayersLabel.Size = UDim2.new(0, 79, 0, 23)
 PlayersLabel.Font = Enum.Font.GothamBold
 PlayersLabel.Text = "Players"
@@ -461,9 +465,38 @@ TeleporttoAirdropLabel.TextWrapped = true
 
 UICorner_23.Parent = TeleporttoAirdropLabel
 
+Teleportwhen.Name = "Teleportwhen"
+Teleportwhen.Parent = MainFrame
+Teleportwhen.BackgroundColor3 = Color3.fromRGB(211, 91, 145)
+Teleportwhen.BackgroundTransparency = 0.200
+Teleportwhen.Position = UDim2.new(0.0574018471, 0, 0.443425119, 0)
+Teleportwhen.Size = UDim2.new(0, 30, 0, 30)
+Teleportwhen.Font = Enum.Font.SourceSans
+Teleportwhen.Text = ""
+Teleportwhen.TextColor3 = Color3.fromRGB(0, 0, 0)
+Teleportwhen.TextSize = 14.000
+
+UICorner_24.Parent = Teleportwhen
+
+TeleportwhenLabel.Name = "TeleportwhenLabel"
+TeleportwhenLabel.Parent = MainFrame
+TeleportwhenLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TeleportwhenLabel.BackgroundTransparency = 1.000
+TeleportwhenLabel.Position = UDim2.new(0.172205344, 0, 0.452599376, 0)
+TeleportwhenLabel.Size = UDim2.new(0, 127, 0, 23)
+TeleportwhenLabel.Font = Enum.Font.GothamBold
+TeleportwhenLabel.Text = "Teleport when you're Low Health"
+TeleportwhenLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+TeleportwhenLabel.TextScaled = true
+TeleportwhenLabel.TextSize = 14.000
+TeleportwhenLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TeleportwhenLabel.TextWrapped = true
+
+UICorner_25.Parent = TeleportwhenLabel
+
 -- Scripts:
 
-local function LMCMF_fake_script() -- HeaderFrame.Draggable 
+local function YDBL_fake_script() -- HeaderFrame.Draggable 
 	local script = Instance.new('LocalScript', HeaderFrame)
 
 	local UIS = game:GetService('UserInputService')
@@ -504,8 +537,8 @@ local function LMCMF_fake_script() -- HeaderFrame.Draggable
 		end
 	end)
 end
-coroutine.wrap(LMCMF_fake_script)()
-local function NBYHYAB_fake_script() -- ApplySpeed.LocalScript 
+coroutine.wrap(YDBL_fake_script)()
+local function KJNF_fake_script() -- ApplySpeed.LocalScript 
 	local script = Instance.new('LocalScript', ApplySpeed)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -513,8 +546,8 @@ local function NBYHYAB_fake_script() -- ApplySpeed.LocalScript
 		game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = script.Parent.Parent.SpeedBox.Text
 	end)
 end
-coroutine.wrap(NBYHYAB_fake_script)()
-local function WUMZIV_fake_script() -- ApplyJump.LocalScript 
+coroutine.wrap(KJNF_fake_script)()
+local function XAUSQ_fake_script() -- ApplyJump.LocalScript 
 	local script = Instance.new('LocalScript', ApplyJump)
 
 	local speed = 50
@@ -529,8 +562,8 @@ local function WUMZIV_fake_script() -- ApplyJump.LocalScript
 		game.Players.LocalPlayer.Character:WaitForChild("Humanoid").JumpPower = speed
 	end
 end
-coroutine.wrap(WUMZIV_fake_script)()
-local function PEYN_fake_script() -- DestroyMolotov.LocalScript 
+coroutine.wrap(XAUSQ_fake_script)()
+local function LAYM_fake_script() -- DestroyMolotov.LocalScript 
 	local script = Instance.new('LocalScript', DestroyMolotov)
 
 	local deb = false
@@ -560,8 +593,8 @@ local function PEYN_fake_script() -- DestroyMolotov.LocalScript
 		end
 	end
 end
-coroutine.wrap(PEYN_fake_script)()
-local function VFFC_fake_script() -- AirdropEsp.LocalScript 
+coroutine.wrap(LAYM_fake_script)()
+local function BIMIWJ_fake_script() -- AirdropEsp.LocalScript 
 	local script = Instance.new('LocalScript', AirdropEsp)
 
 	local deb = false
@@ -598,16 +631,16 @@ local function VFFC_fake_script() -- AirdropEsp.LocalScript
 		end
 	end
 end
-coroutine.wrap(VFFC_fake_script)()
-local function MABDJPO_fake_script() -- DestroyGUI.LocalScript 
+coroutine.wrap(BIMIWJ_fake_script)()
+local function CIRK_fake_script() -- DestroyGUI.LocalScript 
 	local script = Instance.new('LocalScript', DestroyGUI)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(MABDJPO_fake_script)()
-local function IFQR_fake_script() -- CheckAirdrop.LocalScript 
+coroutine.wrap(CIRK_fake_script)()
+local function SJVO_fake_script() -- CheckAirdrop.LocalScript 
 	local script = Instance.new('LocalScript', CheckAirdrop)
 
 	while true do
@@ -620,8 +653,8 @@ local function IFQR_fake_script() -- CheckAirdrop.LocalScript
 		end
 	end
 end
-coroutine.wrap(IFQR_fake_script)()
-local function SJXIFRE_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(SJVO_fake_script)()
+local function JGKVETP_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local deb = false
@@ -667,8 +700,8 @@ local function SJXIFRE_fake_script() -- PlayerEsp.LocalScript
 		end
 	end
 end
-coroutine.wrap(SJXIFRE_fake_script)()
-local function XTRLBDJ_fake_script() -- DestroyBearTrap.LocalScript 
+coroutine.wrap(JGKVETP_fake_script)()
+local function MHCQE_fake_script() -- DestroyBearTrap.LocalScript 
 	local script = Instance.new('LocalScript', DestroyBearTrap)
 
 	local deb = false
@@ -698,8 +731,8 @@ local function XTRLBDJ_fake_script() -- DestroyBearTrap.LocalScript
 		end
 	end
 end
-coroutine.wrap(XTRLBDJ_fake_script)()
-local function QBYKT_fake_script() -- DestroySmoke.LocalScript 
+coroutine.wrap(MHCQE_fake_script)()
+local function SFUPQTP_fake_script() -- DestroySmoke.LocalScript 
 	local script = Instance.new('LocalScript', DestroySmoke)
 
 	local deb = false
@@ -729,8 +762,8 @@ local function QBYKT_fake_script() -- DestroySmoke.LocalScript
 		end
 	end
 end
-coroutine.wrap(QBYKT_fake_script)()
-local function LISQMTG_fake_script() -- FPSBoost.LocalScript 
+coroutine.wrap(SFUPQTP_fake_script)()
+local function QGXLK_fake_script() -- FPSBoost.LocalScript 
 	local script = Instance.new('LocalScript', FPSBoost)
 
 	local deb = false
@@ -767,13 +800,13 @@ local function LISQMTG_fake_script() -- FPSBoost.LocalScript
 		
 	end
 end
-coroutine.wrap(LISQMTG_fake_script)()
-local function MJZNNP_fake_script() -- TeleporttoAirdrop.LocalScript 
+coroutine.wrap(QGXLK_fake_script)()
+local function YAPEHB_fake_script() -- TeleporttoAirdrop.LocalScript 
 	local script = Instance.new('LocalScript', TeleporttoAirdrop)
 
 	local TweenService = game:GetService("TweenService")
 	
-	local timewait = 4.5
+	local timewait = 6.1
 	
 	local info = TweenInfo.new(timewait, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
 	
@@ -799,4 +832,72 @@ local function MJZNNP_fake_script() -- TeleporttoAirdrop.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MJZNNP_fake_script)()
+coroutine.wrap(YAPEHB_fake_script)()
+local function CHFP_fake_script() -- Teleportwhen.LocalScript 
+	local script = Instance.new('LocalScript', Teleportwhen)
+
+	local deb = false
+	local currentApplying = false
+	
+	local timeWait = 6
+	
+	local tweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(timeWait, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		for i, v in pairs(game.Workspace.Map:GetChildren()) do
+			if v.Name ~= "Crossroads" then
+				deb = nil
+				
+				script.Parent.BackgroundColor3 = Color3.new(0.784314, 0, 0)
+				script.Parent.Parent.TeleportwhenLabel.Text = "MAP IS NOT CROSSROADS ! [SCRIPT DISABLED]"
+			end
+		end
+		
+		
+		if deb == false then
+			deb = true
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.117647, 0.784314, 0)
+			
+		elseif deb == true then
+			deb = false
+			
+			script.Parent.BackgroundColor3 = Color3.new(0.827451, 0.356863, 0.568627)
+		end
+	end)
+	
+	
+	
+	while true do
+		wait(.03)
+		if deb == true and currentApplying == false then
+			
+			local humanoid = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+			local humanoidRootPart = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+			
+			if humanoid ~= nil and humanoidRootPart ~= nil then
+				
+				if humanoid.Health <= 45 then
+					
+					
+					tweenService:Create(humanoidRootPart, tweenInfo, {CFrame = game.Workspace.Map.Crossroads.Container.Ladder.Part.CFrame})
+					workspace.Gravity = 0
+					currentApplying = true
+					task.wait(timeWait)
+					workspace.Gravity = 196.2
+					currentApplying = false
+					
+					
+				end
+				
+				
+			end
+			
+			
+			
+		end
+	end
+end
+coroutine.wrap(CHFP_fake_script)()
